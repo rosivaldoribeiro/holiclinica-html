@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Holiclínica – Saúde Natural</title>
+
+        <!--- Estilo Site -->
+        <link rel="stylesheet" id="holiclinica-style-css" href="assets/css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
+
+        <!--- Icons -->
+        <link rel="stylesheet" id="font-awesome-css"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all" />
+
+        <!--- Javascripts -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/eeJavacripts-head.js?ver=30"></script>
+        <script type="text/javascript" src="assets/js/popper.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/scrollbar.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+
+        <!--- Bootstrap Select for Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body class="body-padded">
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-light main-nav">
+                <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link close-menu" href="javascript:void(0)">
+                        <span onclick="openNav()">
+                        <img src="assets/img/hamburger-icon.png" alt="Menu" width="40">
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">
+                        <img src="assets/img/logo.png" class="img-fluid nav-brand" alt="Holiclínica"></a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron-background">
+            <img width="1281" height="528" src="assets/img/online-store-banner.jpg">	
+        </div>
+
+        <section class="mt-4">
+            <div class="container-fluid">
+               <nav class="navbar navbar-expand-sm">
+                  <span class="navbar-text">&nbsp;</span>
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                               <div id="shooping-cart-wrapper" class="ml-3">
+                                  <a href="#">
+                                  <span class="price mr-4 footer-color-text"><strong><span class="woocommerce-Price-amount amount">60,00<span class="woocommerce-Price-currencySymbol">€</span></span></strong></span>
+                                  <span id="position-badge-cart" class="badge badge-warning badge-pill text-white">2</span>
+                                  <img src="assets/img/shopping-cart.png" width="40" height="40" alt="" scale="0">
+                                  </a>
+                               </div>
+                            </li>
+                            <li class="nav-item">
+                               <form class="ml-3 form-inline" action="#">
+                                  <input type="hidden" name="post_type" value="product">
+                                  <input type="text" name="s" value="" class="form-control search-product-input" placeholder="Pesquisar produtos">
+                                  <button type="submit" class="btn btn-white">
+                                      <img src="assets/img/search-button.png" alt="Pesquisar" scale="0"></button>
+                               </form>
+                            </li>
+                         </ul>
+                  </div>
+               </nav>
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <h2 class="text-center mt-2 main-heading lojaonline-checkout-titulo">Os seus dados de faturação <span class="price mr-4 footer-color-text" style="top: -10px; font-size: 22px; font-family: 'AvantGardeBold';">Passo 2</span></h2> 
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="intro-wrapper">
+                        <section id="text-2" class="widget widget_text">
+                            <div class="textwidget">
+                            <div role="form" class="" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="" method="post" novalidate="novalidate">
+                                    <div class="form-group">
+                                        <h3 class="text-center lojaonline-checkout-titulo lead">
+                                        <label for="name">Individual/Empresa*</label><br>
+                                        </h3>
+                                        <select class="selectpicker form-control">
+                                            <option value="">Narnia</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="text-center lojaonline-checkout-titulo lead">
+                                        <label for="name">Número de Contribuinte*</label><br>
+                                        </h3>
+                                        <select class="selectpicker form-control">
+                                            <option value="">Narnia</option>
+                                        </select>
+                                    </div>
+                                    <p class="text-center footer-color-text mt-4 address-footer"><input type="checkbox" class="text-center" checked="checked"> A morada de faturação é igual à morada de envio <br>
+                                    <div class="form-group">
+                                        <h3 class="text-center lojaonline-checkout-titulo lead">
+                                        <label for="phone">Método de Pagamento</label><br>
+                                        </h3>
+                                        <p> 
+                                            <select class="selectpicker form-control">
+                                                <option value="">Narnia</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <br>
+                                            <p class="text-center footer-color-text mt-4 address-footer"><input type="checkbox" class="text-center" checked="checked"> Li e aceito a política de privacidade e os termos condições
+                                            </p>
+                                            <p class="text-center footer-color-text mt-4 address-footer">Este Voucher tem uma validade de <strong>6 meses</strong>
+                                            </p>
+                                            <p class="text-center footer-color-text mt-4 address-footer">Todos os campos são de preenchimento obrigatório, excepto os assinalados (*).
+                                            </p>
+                                        <br>
+                                        <center>
+                                        <a href="lojaonline-passo1.html" type="button" class="btn btn btn-outline-primary btn-lg main-button main-button-bg-full-bg">Voltar</a>
+                                        <a href="lojaonline-passo3.html" type="button" class="btn btn-primary btn-lg main-button main-button-bg-full-bg">Avançar</a> 
+                                        </center>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="intro-content-contacts-image"></div>
+        </section>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <ul id="primary-menu" class="list-unstyled menu-sidebar-list">
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li>
+                <a href="#submenu-clinica" class="nav-link collapsed" data-toggle="collapse" data-target="#submenu-clinica">Clínica</a>
+                <div class="collapse" id="submenu-clinica" aria-expanded="false">
+                    <ul class="flex-column pb-4 nav">
+                        <li><a href="estetitca-avancada.html">Estetica Avançada</a></li>
+                        <li><a href="especialidades-clinicas.html">Especialidades Clínicas</a></li>
+                        <li><a href="estetica-e-bemestar.html">Estética e Bem-Estar</a></li>
+                    </ul>
+                </div>
+                </li>
+                
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="loja.html">Loja Online</a></li>
+                <li><a href="distribuicao-exclusiva.html">Distribuição Exclusiva</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+            </ul>
+            <div class="menu-sidebar-brand">
+                <img src="assets/img/logo.png" class="mx-auto d-block" alt="" width="220px">
+                <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="https://pt-pt.facebook.com/HoliclinicaSaudeNatural" target="_blank" class="social-icons"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/holiclinica/" target="_blank" class="social-icons"><i class="fa fa-instagram fa-lg"></i></a></li>
+                </ul>
+                <p class="text-center">
+                <a href="minha-conta.html" class="btn-link btn-sidebar-login">Área Reservada</a>
+                </p>
+            </div>
+        </div>
+
+        <footer class="site-footer bg-light p-5">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col col-xs-12">
+                    <section class="widget_text widget widget_custom_html">
+                        <div class="textwidget custom-html-widget">
+                            <h3 class="heading-footer">Promoções e novidades?</h3>
+                            <p class="footer-color-text text-newsletter">Subscreva e receba todas as nossas notícias, <br> novidades, promoções e muito mais!</p>
+                        </div>
+                    </section>
+                    <section>
+                        <form method="post" data-name="Newsletter">
+                            <div class="form-group row" style="margin-bottom: 5px">
+                                <label for="name" class="col-sm-1 col-form-label footer-color-text footer-label">Nome</label>
+                                <div class="col-sm-11">
+                                    <input type="text" name="FNAME" class="ml-1 form-control footer-input-control pull-md-3" id="name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-1 col-form-label footer-color-text footer-label">Email</label>
+                                <div class="col-sm-11">
+                                    <input type="email" name="EMAIL" class="form-control footer-input-control ml-1" id="email">
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <button class="btn btn-outline-primary btn-lg main-button">Subscrever</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col col-xs-12">
+                    <div id="logo-footer">
+                        <img src="assets/img/logo.png" class="mx-auto d-block mt-5 img-fluid" alt="">
+                    </div>
+                    <section id="custom_html-3" class="widget_text widget widget_custom_html">
+                        <div class="textwidget custom-html-widget">
+                            <ul class="list-inline text-center mt-4">
+                            <li class="list-inline-item">
+                                <a href="https://pt-pt.facebook.com/HoliclinicaSaudeNatural" target="_blank" class="footer-icons social-icons" rel="noopener noreferrer"><i class="fa fa-facebook fa-lg"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/holiclinica/" target="_blank" class="footer-icons social-icons" rel="noopener noreferrer"><i class="fa fa-instagram fa-lg"></i></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col col-xs-12">
+                    <section id="custom_html-4" class="widget_text widget widget_custom_html">
+                        <div class="textwidget custom-html-widget">
+                            <div class="float-right">
+                            <h3 class="heading-footer">Precisa de ajuda?</h3>
+                            <p class="mt-4">
+                                <a href="tel:+351244838460" class="float-right btn btn-outline-primary main-button">244 838 460</a>
+                            </p>
+                            <p>
+                                <a href="tel:+351962144601" class="float-right btn btn-outline-primary main-button mt-2">962 144 601</a>
+                            </p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <p class="text-right footer-color-text mt-4 address-footer">Rua das Pimenteiras <br> Urbanização das Pimenteiras, Nº5 - R/C <br> 2415-478 Marrazes - Leiria</p>
+                            <div class="float-right">
+                            <p><a href="mailto:marketing@holiclinica.pt" class="text-right footer-color-text email-link-footer">
+                                <u>marketing@holiclinica.pt</u></a>
+                            </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col">
+                    <small>Holiclínica© 2020 - Todos os direitos reservados</small>
+                </div>
+                <div class="col">
+                    <div class="float-right">
+                        <small>Desenvolvido por CyberShop</small>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="at4-follow-outer addthis-smartlayers">
+            <div role="region" aria-labelledby="at4-follow-label" id="at4-follow" class="at4-follow at4-follow-24 ats-transparent addthis-animated slideInRight">
+                <div id="at4-follow-label">Follow</div>
+                <div class="at4-follow-inner">
+                <div id="at4-fcc" class="at4-follow-close-control">
+                    <div title="Hide" class="at4-arrow at-right">Hide</div>
+                </div>
+                <div class="at4-follow-container addthis_24x24_style">
+                    <span class="at-follow-label">Siga-nos</span>
+                    <a svc="instagram" svcid="antgraphic/" href="http://instagram.com/antgraphic/" target="_blank" class="at-follow-btn at-circular-element">
+                        <span class="">
+                            <div><span class="at4-visually-hidden">Follow on Instagram</span></div>
+                            <div>
+                            <span class="at-icon-wrapper" style="background-color: rgb(224, 53, 102);">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-instagram-1" class="at-icon at-icon-instagram">
+                                    <title id="at-svg-instagram-1">Instagram</title>
+                                    <g>
+                                        <path d="M16 5c-2.987 0-3.362.013-4.535.066-1.17.054-1.97.24-2.67.512a5.392 5.392 0 0 0-1.95 1.268 5.392 5.392 0 0 0-1.267 1.95c-.272.698-.458 1.498-.512 2.67C5.013 12.637 5 13.012 5 16s.013 3.362.066 4.535c.054 1.17.24 1.97.512 2.67.28.724.657 1.337 1.268 1.95a5.392 5.392 0 0 0 1.95 1.268c.698.27 1.498.457 2.67.51 1.172.054 1.547.067 4.534.067s3.362-.013 4.535-.066c1.17-.054 1.97-.24 2.67-.51a5.392 5.392 0 0 0 1.95-1.27 5.392 5.392 0 0 0 1.268-1.95c.27-.698.457-1.498.51-2.67.054-1.172.067-1.547.067-4.534s-.013-3.362-.066-4.535c-.054-1.17-.24-1.97-.51-2.67a5.392 5.392 0 0 0-1.27-1.95 5.392 5.392 0 0 0-1.95-1.267c-.698-.272-1.498-.458-2.67-.512C19.363 5.013 18.988 5 16 5zm0 1.982c2.937 0 3.285.01 4.445.064 1.072.05 1.655.228 2.042.38.514.198.88.437 1.265.822.385.385.624.75.823 1.265.15.387.33.97.38 2.042.052 1.16.063 1.508.063 4.445 0 2.937-.01 3.285-.064 4.445-.05 1.072-.228 1.655-.38 2.042-.198.514-.437.88-.822 1.265-.385.385-.75.624-1.265.823-.387.15-.97.33-2.042.38-1.16.052-1.508.063-4.445.063-2.937 0-3.285-.01-4.445-.064-1.072-.05-1.655-.228-2.042-.38-.514-.198-.88-.437-1.265-.822a3.408 3.408 0 0 1-.823-1.265c-.15-.387-.33-.97-.38-2.042-.052-1.16-.063-1.508-.063-4.445 0-2.937.01-3.285.064-4.445.05-1.072.228-1.655.38-2.042.198-.514.437-.88.822-1.265.385-.385.75-.624 1.265-.823.387-.15.97-.33 2.042-.38 1.16-.052 1.508-.063 4.445-.063zm0 12.685a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-9.316a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3zm7.192-.222a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" fill-rule="evenodd"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                            </div>
+                        </span>
+                    </a>
+                    <a svc="facebook" svcid="antgraphic.impressaodigital/" href="http://www.facebook.com/antgraphic.impressaodigital/" target="_blank" class="at-follow-btn at-circular-element">
+                        <span class="">
+                            <div><span class="at4-visually-hidden">Follow on Facebook</span></div>
+                            <div>
+                            <span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152);">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" class="at-icon at-icon-facebook">
+                                    <title id="at-svg-facebook-2">Facebook</title>
+                                    <g>
+                                        <path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                            </div>
+                        </span>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
